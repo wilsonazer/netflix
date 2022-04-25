@@ -38,8 +38,9 @@ header nav a:hover{
 }
 
 /**** Filme principal  ***/
-
-
+.filme-principal{
+  margin-bottom: 30px;
+}
 
  main .buttons .button{
    background-color: rgba(0,0,0,.5);
@@ -115,6 +116,12 @@ header nav a:hover{
 }
 **/
 
+/*
+ Carrossel
+**/
+.carrossel{
+  margin-bottom:30px;
+}
 
 .faq h1{
   text-align: center;
