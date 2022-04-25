@@ -1,0 +1,203 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root{
+   --red:#E50914;
+   --black: #141414;
+}
+body {
+  background-color: var(--black);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo{
+  color: var(--red);
+  font-size: 40px;
+  font-family: 'Arial Black';
+}
+
+header nav a{
+  text-decoration: none;
+  color:#AAA;
+  margin-left: 10px;
+  transition: all  0.7s;
+
+}
+header nav a:hover{
+  color: #FFF;
+}
+
+/**** Filme principal  ***/
+
+
+
+ main .buttons .button{
+   background-color: rgba(0,0,0,.5);
+   color: white;
+   border: none;
+   padding: 15px 30px;
+   font-size: 12px;
+
+   cursor: pointer;
+   margin-right: 15px;
+   transition:  .4s ease-out;
+ }
+
+ main .buttons .button:hover{
+   color: #141414;
+   background-color: white;
+ }
+ main .buttons .button i{
+   margin-right: 5px;
+   font-size: 15px;
+ }
+
+ /**  Container **/
+.container{
+  margin: 0 50px ;
+}
+
+.filme-principal .container{
+  display: flex ;
+  margin-top: 15px;
+  justify-content: space-evenly;
+}
+
+.destaque-principal{
+  width: 100%;
+
+  background: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.8)) ,url('../imgs/rick-01.jpg');
+  height: 400px;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.destaque-principal .descricao{
+  margin-top: 20px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.destaque-principal .title{
+  font-size: 45px;
+}
+.info-principal{
+  width: 100%;
+  background: linear-gradient( rgba(0,0,0.5), rgba(0,0,0,.5)), url('../imgs/rick-02.jpg');
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.filme-principal .container{
+  width: 70%;
+}
+**/
+
+
+/*
+        FAQ
+}
+**/
+
+
+.faq h1{
+  text-align: center;
+}
+.accordian{
+  background-color: #000;
+  color: #FFF;
+  max-width: 900px;
+  margin: 40px auto;
+  display: block;
+  font-family: serif;
+  font-size: 24px;
+  font-weight: 350;
+}
+.accordian .card{
+  background-color:#303030;
+  box-shadow: 0px 0px 1px #4d4d4d;
+  padding: 10px 25px 25px 25px;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+.accordian .card .card-header{
+  position: relative;
+  
+}
+
+.accordian .card .card-header h3{
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  padding: 20px 20px;
+
+}
+.accordian .card .card-header span{
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  height: 25px;
+  width: 25px;
+
+}
+.accordian .card .card-body{
+  padding: 20px;
+  display: none;
+}
+/***
+.accordian .card:nth-child(1) .card-body{
+  display: block;
+}
+
+**/
+
+.accordian .card .card-body p{
+  padding-bottom: 25px;
+}
+
+
+
+/***
+Modal para botões assistir e info
+**/
+.modal{
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: 2s ease-in-out;
+}
+.modal #close-modal{
+    font-size: 45px;
+    position: absolute;
+    top:40px;
+    right:80px;
+    cursor: pointer;
+}
