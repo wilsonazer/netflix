@@ -33,4 +33,22 @@ $( function(){
         $('.modal .modal-content').empty().html(' <h2>Desculpe...</h2> <p> Sem mais informações disponíves.</p><p> Aguarde, em breve teremos Novidades!</p>')
      })
 
+/** OWL Carrossel */
+     $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+
 })
